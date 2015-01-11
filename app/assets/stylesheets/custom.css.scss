@@ -6,23 +6,27 @@ html {
 }
 
 .number {
-  
-    height: 40px;
-    width: 40px;
+    cursor: pointer;  
+    height: 43px;
+    width: 43px;
     border-radius: 3px;
     border: solid black ;
     background-color: lightgray;
     display: inline-block;
-    margin-left: 4px;
-    margin-top: 4px;
+    margin-left: 5px;
+    margin-top: 5px;
     text-align: center;
     font-size: 30px;
+}
+
+.numpad-top {
+    margin-top: 5px;
 }
 
 .callbutton {
   
     height: 50px;
-    width: 140px;
+    width: 150px;
     border-radius: 3px;
     border: solid black ;
     background-color: lightgreen;
@@ -31,7 +35,40 @@ html {
     margin-top: 5px;
     text-align: center;
     font-size: 25px;
-    color: black; 
+    color: black;
+    cursor: pointer;
+}
+
+.endbutton {
+  
+    height: 50px;
+    width: 150px;
+    border-radius: 3px;
+    border: solid black ;
+    background-color: red;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+.notebutton {
+  
+    height: 50px;
+    width: 150px;
+    border-radius: 3px;
+    border: solid black ;
+    background-color: lightgray;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
 }
 
 body {

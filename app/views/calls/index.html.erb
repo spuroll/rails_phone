@@ -1,3 +1,5 @@
+<script type="text/javascript" src="jquery-2.1.3.js"></script>
+<script type='text/javascript' src='script.js'></script>
 
 <%= render 'layouts/header' %>
 
@@ -5,20 +7,30 @@
 
 <div class="col-md-2" style="background-color: lightblue;
          box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;" align="center">
+  
+  <div class="duration">0</div>
+  <div class="numpad-top"><%= form_for(:call, :url => {:controller => "calls", :action => "create"}) do |f|%>
+    <div class="numfield"><%= f.text_field :number %></div>
+    <div class="notefield"><%= f.text_field :note %></div>
+    <div><%= f.hidden_field :duration %></div>
+    <div class="submission"><%= submit_tag("Add Note") %></div>
+  <% end %></div>
 
-  <div class="number">1</div>
-  <div class="number">2</div>
-  <div class="number">3</div><br>
-  <div class="number">4</div>
-  <div class="number">5</div>
-  <div class="number">6</div><br>
-  <div class="number">7</div>
-  <div class="number">8</div>
-  <div class="number">9</div><br>
-  <div class="number">*</div>
-  <div class="number">0</div>
-  <div class="number">#</div><br>
+
+  <div class="number" id="1">1</div>
+  <div class="number" id="2">2</div>
+  <div class="number" id="3">3</div><br>
+  <div class="number" id="4">4</div>
+  <div class="number" id="5">5</div>
+  <div class="number" id="6">6</div><br>
+  <div class="number" id="7">7</div>
+  <div class="number" id="8">8</div>
+  <div class="number" id="9">9</div><br>
+  <div class="number" id="asterisk">*</div>
+  <div class="number" id="0">0</div>
+  <div class="number" id="pound">#</div><br>
   <div class="callbutton">Call</div>
+  <div class="endbutton">End</div>
   
 </div>
 
