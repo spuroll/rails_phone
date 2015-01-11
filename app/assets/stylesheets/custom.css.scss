@@ -5,10 +5,41 @@ html {
   overflow-y: scroll;
 }
 
+.number {
+  
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    border: solid black ;
+    background-color: lightgray;
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: 4px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.callbutton {
+  
+    height: 50px;
+    width: 140px;
+    border-radius: 3px;
+    border: solid black ;
+    background-color: lightgreen;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: black; 
+}
+
 body {
   padding-top: 60px;
   padding-left: 100px;
   padding-right: 100px;
+  
+  
 }
 
 .logo {

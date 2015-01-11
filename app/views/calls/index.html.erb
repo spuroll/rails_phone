@@ -1,19 +1,44 @@
+
 <%= render 'layouts/header' %>
 
-<h1>Call History</h1>
+<h1>User Dashboard</h1>
 
-<div class = "floating-table">
-<table class="table table-striped">
-  <th>Origin Number</th>
-  <th>Duration</th>
-  <th>Note</th>
-  <% @calls.each do |call| %>
-    <tr>
-      <td><%= call.number %></td>
-      <td><%= call.duration %> seconds</td>
-      <td><%= call.note %></td>
-    </tr>
-  <% end %>
+<div class="col-md-2" style="background-color: lightblue;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;" align="center">
 
-</table>
+  <div class="number">1</div>
+  <div class="number">2</div>
+  <div class="number">3</div><br>
+  <div class="number">4</div>
+  <div class="number">5</div>
+  <div class="number">6</div><br>
+  <div class="number">7</div>
+  <div class="number">8</div>
+  <div class="number">9</div><br>
+  <div class="number">*</div>
+  <div class="number">0</div>
+  <div class="number">#</div><br>
+  <div class="callbutton">Call</div>
+  
+</div>
+
+<div class="col-md-10">
+  <div class = "floating-table">
+    <table class="table table-striped">
+      <th>ID</th>
+      <th>Phone Num</th>
+      <th>Duration</th>
+      <th>End Time</th>
+      <th>Note</th>
+      <% @sorted_calls.each do |call| %>
+        <tr>
+          <td><%= call.id %></td>
+          <td><%= call.number %></td>
+          <td><%= call.duration %> seconds</td>
+          <td><%= call.created_at %></td>
+          <td><%= call.note %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
 </div>
