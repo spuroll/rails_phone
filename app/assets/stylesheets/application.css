@@ -14,9 +14,22 @@
  *= require_self
  */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-
-td {
-    border: 2px solid black;
+.floating-table{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
 }
+
+
+
+.links {
+  letter-spacing: -1px;
+  padding-top: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 

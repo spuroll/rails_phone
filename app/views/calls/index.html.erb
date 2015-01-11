@@ -1,7 +1,10 @@
+<%= render 'layouts/header' %>
+
 <h1>Call History</h1>
 
-<table>
-  <th>Number</th>
+<div class = "floating-table">
+<table class="table table-striped">
+  <th>Origin Number</th>
   <th>Duration</th>
   <th>Note</th>
   <% @calls.each do |call| %>
@@ -13,3 +16,4 @@
   <% end %>
 
 </table>
+</div>
