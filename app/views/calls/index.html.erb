@@ -1,0 +1,15 @@
+<h1>Call History</h1>
+
+<table>
+  <th>Number</th>
+  <th>Duration</th>
+  <th>Note</th>
+  <% @calls.each do |call| %>
+    <tr>
+      <td><%= call.number %></td>
+      <td><%= call.duration %> seconds</td>
+      <td><%= call.note %></td>
+    </tr>
+  <% end %>
+
+</table>
